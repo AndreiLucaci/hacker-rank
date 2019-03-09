@@ -14,18 +14,14 @@ namespace HackerRank.Prcatice.Algoritms.Strings
 
         private static int MinChars(string str)
         {
-            if (str.Length == 1) return 5;
-
             var nr = 0;
-            var minNr = str.Length - MinNumberOfChatacters;
 
             if (!str.Any(Numbers.Contains)) nr++;
             if (!str.Any(LowerCase.Contains)) nr++;
             if (!str.Any(UpperCase.Contains)) nr++;
             if (!str.Any(SpecialCharacters.Contains)) nr++;
 
-            var minAbs = Math.Abs(minNr);
-            return minNr > 0 ? nr : nr <= minAbs ? minAbs : Math.Max(nr, minAbs);
+            return Math.Max(nr, MinNumberOfChatacters - str.Length);
         }
 
         public override void Solution()
