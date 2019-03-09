@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using HackerRank.Prcatice.Algoritms.Implementation;
 using HackerRank.Prcatice.Algoritms.Strings;
 
 namespace HackerRank
@@ -7,7 +8,8 @@ namespace HackerRank
     {
         public static Dictionary<string, ISolution> Problems = new Dictionary<string, ISolution>
         {
-            [Pratice.Algoritms.Strings.StrongPassowrd] = new StrongPassword()
+            [Pratice.Algoritms.Strings.StrongPassowrd] = new StrongPassword(),
+            [Pratice.Algoritms.Implementation.BirthDayChocolate] = new BirthDayChocolate(),
         };
     }
 
@@ -18,6 +20,11 @@ namespace HackerRank
             public class Strings
             {
                 public const string StrongPassowrd = nameof(StrongPassowrd);
+            }
+
+            public class Implementation
+            {
+                public const string BirthDayChocolate = nameof(BirthDayChocolate);
             }
         }
     }
