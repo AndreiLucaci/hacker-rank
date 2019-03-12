@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            var problem = ProblemInitializer.Problems[Pratice.Algoritms.Implementation.BirthDayChocolate];
+            var problem = ProblemInitializer.Problems[Pratice.Algoritms.Implementation.DivisibleSumPairs];
 
             problem.Solve();
         }
