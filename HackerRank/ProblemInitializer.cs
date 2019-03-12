@@ -10,6 +10,7 @@ namespace HackerRank
         {
             [Pratice.Algoritms.Strings.StrongPassowrd] = new StrongPassword(),
             [Pratice.Algoritms.Implementation.BirthDayChocolate] = new BirthDayChocolate(),
+            [Pratice.Algoritms.Implementation.DivisibleSumPairs] = new DivisibleSumPairs(),
         };
     }
 
@@ -25,6 +26,7 @@ namespace HackerRank
             public class Implementation
             {
                 public const string BirthDayChocolate = nameof(BirthDayChocolate);
+                public const string DivisibleSumPairs = nameof(DivisibleSumPairs);
             }
         }
     }
